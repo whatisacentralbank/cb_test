@@ -1,0 +1,178 @@
+#logo {
+    height: 2.5em;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+    margin: 0;
+    background-color: #FFFDF9;
+}
+
+h1, h3, button {
+    font-family: 'EB Garamond', serif;
+}
+
+#map {
+    width: 110%;
+}
+
+.lead {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.6em;
+    padding-right: 2em;
+}
+
+.link-group {
+    padding-right: 4em;
+} 
+
+.card {
+    border: none;
+}
+
+.highlight {
+    background-color: #E6E72F;
+}
+
+#year {
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.btn-dark {
+    background-color: black;
+    font-size: 1.2em;
+}
+
+header .container {
+    margin-bottom: 0
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 1em;
+    padding-top: 0.6em;
+}
+
+.video-card {
+    background-color: #FFFDF9;
+    padding-left: 0;
+}
+
+.video-number {
+    font-family: 'EB Garamond', serif;
+    font-size: 5em;
+    margin-top: -0.4em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+#time {
+    border-left: 3px solid black;
+    padding-left: 0.7em;
+    font-size: 0.925em;
+}
+
+.shadow button {
+    font-size: 1.4em;
+}
+
+.card-container h3 {
+    font-size: 1.6em;
+}
+
+#time::before {
+    content: "•";
+    font-size: 5.8em;
+    position: absolute;
+    margin-left: -0.34em;
+    margin-top: -0.708em;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.highlight:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.shadow {
+    box-shadow: 0px 0px 15px gray;
+    width: 19em;
+}
+
+.article {
+    background-color: white;
+    box-shadow: 0px 0px 15px gray;
+    padding: 2em;
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.article-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.article-container {
+    width: 50%;
+}
+
+.article p {
+    font-size: 1.3em;
+}
+
+.article-title {
+    font-weight: 200;
+    text-align: center;
+    padding: 0.5em;
+}
+
+footer {
+    background-color: black;
+    padding: 1.5em;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer img {
+    height: 80px;
+}
+
+.serif-font {
+    font-family: 'EB Garamond', serif;
+}
+
+.move {
+    margin-left: 1em;
+}
+
+#timeline-start {
+    border-left: 3px solid black;
+    padding-left: 3em;
+    margin-left: 3em;
+}
+
+#timeline-start::before {
+    content: "•";
+    font-size: 7em;
+    position: absolute;
+    margin-left: -0.64em;
+    margin-top: -0.73em;
+}
