@@ -7,13 +7,35 @@
     justify-content: space-between;
 }
 
+.container-fluid {
+    margin-right: 10em;
+    margin-left: 15em;
+}
+
 body {
     margin: 0;
+    font-family: Verdana, Tahoma, sans-serif !important;
+    font-weight: 500;
     background-color: #FFFDF9;
 }
 
-h1, h3, button {
+.navbar a {
+    color: black !important;
+    font-size: calc(0.6rem + 1.5vw);
+}
+
+@media (min-width: 500px) {
+    .navbar a {
+        font-size: inherit;
+    }
+}
+
+h1, h3 {
     font-family: 'EB Garamond', serif;
+}
+
+button {
+    font-size: 0.6em;
 }
 
 #map {
@@ -22,8 +44,14 @@ h1, h3, button {
 
 .lead {
     font-family: 'EB Garamond', serif;
-    font-size: 1.6em;
+    font-size: calc(1rem + 1vw);
     padding-right: 2em;
+}
+
+@media (min-width: 1200px) {
+    .lead {
+        font-size: 1.6rem;
+    }
 }
 
 .link-group {
@@ -76,6 +104,14 @@ ul {
     padding: 0;
 }
 
+.navbar-light .navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
 #time {
     border-left: 3px solid black;
     padding-left: 0.7em;
@@ -92,9 +128,9 @@ ul {
 
 #time::before {
     content: "•";
-    font-size: 5.8em;
+    font-size: 4em;
     position: absolute;
-    margin-left: -0.34em;
+    margin-left: -0.48em;
     margin-top: -0.708em;
 }
 
@@ -171,8 +207,89 @@ footer img {
 
 #timeline-start::before {
     content: "•";
-    font-size: 7em;
+    font-size: 4em;
     position: absolute;
-    margin-left: -0.64em;
-    margin-top: -0.73em;
+    margin-left: -1.03em;
+    margin-top: -0.7em;
+}
+
+.headline {
+    background-color: black;
+    color: #f7f7f7;
+    display: flex;
+    justify-content: end;
+    margin-top: -1.5rem;
+}
+
+.headline div {
+    width: 55%;
+    padding: 3em;
+    border-left: 14px #f7f7f7 solid;
+}
+
+.headline h1 {
+    font-size: 4em;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 55%;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.tb {
+    height: 100vh;
+    display: flex;
+}
+
+.left {
+    width: 55%;
+}
+
+.timeline-desc {
+    font-size: 2.2em;
+    padding: 8em 3em;
+}
+
+.right {
+    width: 45%;
+    height: 100%;
+    padding-left: 0.4em;
+}
+
+.timeline-img {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.tb img {
+    max-height: 600px;
+}
+
+.tb h1 {
+    font-size: 8em;
+    margin-bottom: -0.3em;
+    margin-left: 0.2em;
+}
+
+.timeline-desc::before {
+    content: "•";
+    font-size: 5em;
+    position: absolute;
+    margin-left: 5.65em;
+    margin-top: -1.5em;
+}
+
+.timeline-block-w1 .timeline-desc {
+    border-right: 14px black solid;
 }
