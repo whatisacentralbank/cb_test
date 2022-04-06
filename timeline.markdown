@@ -1,6 +1,6 @@
 ---
 layout: timeline
 title: История банковского регулирования
-permalink: timeline
+permalink: "timeline"
 order: 2
 ---
