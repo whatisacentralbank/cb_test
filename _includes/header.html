@@ -9,7 +9,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div id="navbar_collapse" class="collapse navbar-collapse">
-            <nav class="navbar-nav w-100 d-flex justify-content-end align-items-end">
+            <nav class="navbar-nav w-100 d-flex justify-content-end">
                 {% assign sorted_pages = site.pages | sort:"order" %}
                 {% for page in sorted_pages %}
                     {% if page.layout == 'map' or page.layout == 'bankofrussia' or page.layout == 'timeline' %}
