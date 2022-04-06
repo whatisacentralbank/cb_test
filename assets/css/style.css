@@ -216,8 +216,27 @@ body {
     background-color: #FFFDF9;
 }
 
+.headline {
+    background: black;
+    margin-top: -1.5em;
+    color: white;
+    display: flex;
+    justify-content: end;
+    height: 14em;
+    align-items: center;
+}
+
+.headline h1 {
+    font-size: 4em;
+}
+
+.headline div {
+    max-width: 50%;
+    margin-right: 10em;
+}
+
 .timeline {
-    margin: 0 auto;
+    margin: -2em auto;
     max-width: 85%;
     padding: 25px;
     display: grid;
