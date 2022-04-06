@@ -164,7 +164,11 @@ a {
 }
 
 .article-container {
-    width: 50%;
+    width: max(60%, 600px);
+}
+
+.article-container img {
+    max-width: 100%;
 }
 
 .article p {
