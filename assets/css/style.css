@@ -134,6 +134,8 @@ ul {
     margin-top: -0.708em;
 }
 
+
+
 a {
     color: black;
     text-decoration: none;
@@ -169,16 +171,18 @@ a {
 
 .article-container img {
     max-width: 100%;
+    margin: 2em 0;
 }
 
 .article p {
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 .article-title {
     font-weight: 200;
     text-align: center;
     padding: 0.5em;
+    margin: 0.7em;
 }
 
 footer {
@@ -201,6 +205,11 @@ footer img {
 
 .move {
     margin-left: 1em;
+}
+
+.m {
+    margin-top: 5em;
+    margin-bottom: 3em;
 }
 
 body {
