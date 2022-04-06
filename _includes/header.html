@@ -13,7 +13,7 @@
                 {% assign sorted_pages = site.pages | sort:"order" %}
                 {% for page in sorted_pages %}
                     {% if page.layout == 'map' or page.layout == 'bankofrussia' or page.layout == 'timeline' %}
-                        <a href="{{ site.baseurl}}/{{ page.url }}" class="nav-link pb-3 mx-2">{{ page.title }}</a>
+                        <a href="{{ site.baseurl}}{{ page.url }}" class="nav-link pb-3 mx-2">{{ page.title }}</a>
                     {% endif %}
                 {% endfor %}
             </nav>
