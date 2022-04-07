@@ -116,6 +116,7 @@ ul {
     border-left: 3px solid black;
     padding-left: 0.7em;
     font-size: 0.925em;
+    margin-top: 1.5em;
 }
 
 .shadow button {
@@ -139,6 +140,11 @@ ul {
 a {
     color: black;
     text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
 }
 
 .highlight:hover {
@@ -174,8 +180,9 @@ a {
     margin: 2em 0;
 }
 
-.article p {
+.article p, .article li {
     font-size: 1.2em;
+    margin: auto 2em;
 }
 
 .article-title {
@@ -314,4 +321,14 @@ body {
 
 .dec {
     margin-top: -0.5em;
+}
+
+.function {
+    display: flex;
+    align-items: center;
+}
+
+.function img {
+    max-height: 60px;
+    max-width: 64px;
 }
