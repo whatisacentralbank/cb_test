@@ -99,7 +99,7 @@ header .container {
     margin-top: -0.4em;
 }
 
-ul {
+header ul, .link-group ul {
     list-style: none;
     padding: 0;
 }
