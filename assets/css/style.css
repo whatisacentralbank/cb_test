@@ -257,15 +257,19 @@ body {
 }
 
 .timeline {
-    margin: -2em auto;
-    max-width: 85%;
-    padding: 25px;
+    margin: 0 0;
+    max-width: 100%;
+    padding: 0;
     display: grid;
     grid-template-columns: 2fr 7px 1fr;
 }
 
 .timeline-component {
-    margin: 2em 3em;
+    margin: 2em 0;
+}
+
+.timeline-component-img {
+    width: 100%;
 }
 
 .timeline-container-right {
@@ -296,6 +300,7 @@ body {
 
 .timeline-component p {
     font-size: min(1.6em, calc(0.4rem + 1.5vw));
+    margin: 2em 3em;
 }
 
 .timeline-middle {
