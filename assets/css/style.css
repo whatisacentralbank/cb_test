@@ -127,7 +127,7 @@ header ul, .link-group ul {
 
 #time {
     border-left: 3px solid black;
-    padding-left: 0.7em;
+    padding-left: 0.9em;
     font-size: 0.925em;
     margin-top: 1.5em;
 }
@@ -144,7 +144,7 @@ header ul, .link-group ul {
     content: "•";
     font-size: 4em;
     position: absolute;
-    margin-left: -0.48em;
+    margin-left: -0.52em;
     margin-top: -0.708em;
 }
 
@@ -196,6 +196,8 @@ a:hover {
 .article p, .article li {
     font-size: 1.2em;
     margin: auto 2em;
+    text-align: justify;
+    text-align-last: left;
 }
 
 .article-title {
