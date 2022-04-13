@@ -195,7 +195,6 @@ a:hover {
 
 .article p, .article li {
     font-size: 1.2em;
-    margin: auto 2em;
     text-align: justify;
     text-align-last: left;
 }
