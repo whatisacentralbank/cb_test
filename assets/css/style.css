@@ -299,7 +299,7 @@ body {
 }
 
 .timeline-component p {
-    font-size: min(1.6em, calc(0.4rem + 1.5vw));
+    font-size: max(0.6em, calc(0.2rem + 1.1vw));
     margin: 2em 3em;
 }
 
