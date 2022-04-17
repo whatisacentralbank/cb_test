@@ -261,7 +261,15 @@ body {
     max-width: 100%;
     padding: 0;
     display: grid;
-    grid-template-columns: 2fr 7px 1fr;
+}
+
+.timeline, .timeline-period {
+    grid-template-columns: 3fr 7px 2fr;
+}
+
+.timeline-period {
+    background-color: black;
+    grid-template-columns: 2fr 7px 3fr;
 }
 
 .timeline-component {
@@ -308,9 +316,29 @@ body {
     margin: 2em 3em;
 }
 
-.timeline-middle {
+.timeline .timeline-middle {
     position: relative;
-    background: black;;
+    background: black;
+}
+
+
+.timeline-period .timeline-middle {
+    position: relative;
+    background: white;
+}
+
+.timeline-period p, .timeline-period h1 {
+    color: white;
+}
+
+.timeline-period .timeline-year {
+    padding-top: 3em;
+}
+
+.timeline-period .timeline-image {
+    padding-bottom: 4em;
+    padding-right: 4em;
+    margin-top: 2em;
 }
 
 .timeline-point {
