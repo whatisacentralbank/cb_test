@@ -288,6 +288,10 @@ body {
 
 .timeline-container-left .timeline-image {
     margin-top: -6em;
+    margin-left: 6em;
+}
+
+.timeline-container-left img {
     margin-left: 2em;
 }
 
@@ -299,7 +303,8 @@ body {
 }
 
 .timeline-component p {
-    font-size: max(0.6em, calc(0.2rem + 1.1vw));
+    /* font-size: max(0.6em, calc(0.2rem + 1.1vw)); */
+    font-size: clamp(1rem, 2.5vw, 1.45rem);
     margin: 2em 3em;
 }
 
