@@ -15,7 +15,6 @@
 body {
     margin: 0;
     font-family: Verdana, Tahoma, sans-serif !important;
-      color: gray;
     font-weight: 500;
     background-color: #FFFDF9;
 }
@@ -209,7 +208,7 @@ a:hover {
 
 footer {
     background-color: black;
-    color: white;
+    color: rgb(221, 221, 221);
 }
 
 .serif-font {
