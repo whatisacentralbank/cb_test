@@ -208,16 +208,7 @@ a:hover {
 
 footer {
     background-color: black;
-    padding: 1.5em;
-}
-
-footer .container {
-    display: flex;
-    justify-content: space-around;
-}
-
-footer img {
-    height: 80px;
+    color: white;
 }
 
 .serif-font {
@@ -377,7 +368,7 @@ body {
 
 .function {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .function img {
