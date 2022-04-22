@@ -373,7 +373,14 @@ footer img {
 }
 
 .timeline-container h1 {
-    font-size: 6em;
+    font-size: 5.3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+}
+
+.timeline-period h1 {
+    font-family: 'EB Garamond', serif;
+    font-weight: 500;
 }
 
 .timeline-image {
