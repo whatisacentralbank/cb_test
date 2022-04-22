@@ -325,7 +325,7 @@ footer img {
 
 .timeline-component p {
     /* font-size: max(0.6em, calc(0.2rem + 1.1vw)); */
-    font-size: clamp(0.8rem, 5vw, 1.35rem);
+    font-size: clamp(1em, 1.7vw, 1.4rem);
     margin: 2em 3em;
 }
 
