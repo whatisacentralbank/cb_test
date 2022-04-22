@@ -34,6 +34,14 @@ h1, h3 {
     font-family: 'EB Garamond', serif;
 }
 
+h1 {
+    font-size: clamp(2.3rem, 2.5vw, 5rem)
+}
+
+h4 {
+    font-weight: 700;
+}
+
 button {
     font-size: 0.6em;
 }
@@ -177,6 +185,15 @@ a:hover {
     justify-content: center;
 }
 
+@media (max-width: 576px) {
+    .article {
+        box-shadow: none !important;
+        margin-top: -2em;
+        background-color: inherit;
+        padding: 0;
+    }
+}
+
 .article-1 {
     display: flex;
     justify-content: center;
@@ -192,7 +209,7 @@ a:hover {
 }
 
 .article p, .article li {
-    font-size: 1.2em;
+    font-size: clamp(16px, 2.3vw, 1.2em);
     text-align: justify;
     text-align-last: left;
 }
@@ -202,6 +219,7 @@ a:hover {
     text-align: center;
     padding: 0.5em;
     margin: 0.7em;
+    font-size: clamp(1.7rem, 2.8vw, 3rem)
 }
 
 footer {
@@ -215,8 +233,8 @@ footer > .container {
 }
 
 footer img {
-    max-height: 200px;
-    padding: 4em;
+    max-height: 150px;
+    padding: 3em;
 }
 
 .serif-font {
