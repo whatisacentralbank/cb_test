@@ -203,7 +203,7 @@ a:hover {
     margin: 2em;
     display: block;
     font-size: 30%;
-  }
+}
 
 .article-1 {
     display: flex;
@@ -423,15 +423,41 @@ footer img {
         margin-right: 0;
     }
 
-    .timeline, .timeline-period {
+    .timeline {
         grid-template-columns: 5px 1fr;
         padding-left: 1.5em;
+    }
+
+    .timeline-period {
+        padding-left: 0;
+        grid-template-columns: 0px 1fr;
     }
 
     .timeline-point {
         width: 25px;
         height: 25px;
         top: 5%;
+    }
+
+    .timeline-period .timeline-container {
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 2em 2em 2em;
+        justify-content: flex-start;
+    }
+
+    .timeline-period .timeline-image {
+        padding: 0;
+    }
+
+    .timeline-period img {
+        float:none !important;
+    }
+
+    .timeline-period .timeline-year {
+        padding-top: 0;
     }
 
     .timeline-year div:first-child {
@@ -460,6 +486,14 @@ footer img {
         margin-right: 3rem;
         font-size: 1.15rem;
     }
+
+}
+
+.timeline br {
+    content: "";
+    margin: 2em;
+    display: block;
+    font-size: 30%;
 }
 
 .function {
