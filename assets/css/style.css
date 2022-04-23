@@ -447,14 +447,18 @@ footer img {
         margin-top: 0;
     }
 
-    .timeline-component, .timeline-middle{
-        max-height: 100vh;
+    .timeline-component, .timeline-middle, .timeline-component-img{
+        max-height: 120vh;
         height: 100vh;
+    }
+
+    .timeline-middle {
+        height: 100%;
     }
 
     .timeline-mobile-event {
         margin-right: 3rem;
-        font-size: 1.2rem;
+        font-size: 1.15rem;
     }
 }
 
