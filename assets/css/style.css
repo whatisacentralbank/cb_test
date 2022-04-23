@@ -406,6 +406,58 @@ footer img {
     margin-top: -0.5em;
 }
 
+@media (max-width: 992px) {
+    .headline {
+        padding-left: 1.5em;
+        justify-content: flex-start;
+        height: 10rem;
+        margin-bottom: 1.2em;
+    }
+
+    .headline h1 {
+        font-size: 10vw;
+    }
+
+    .headline div {
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .timeline, .timeline-period {
+        grid-template-columns: 5px 1fr;
+        padding-left: 1.5em;
+    }
+
+    .timeline-point {
+        width: 25px;
+        height: 25px;
+        top: 5%;
+    }
+
+    .timeline-year div:first-child {
+        margin-top: 2em;
+        display: flex;
+    }
+
+    .timeline-year h1 {
+        font-size: 3.5rem;
+    }
+
+    .dec {
+        margin-top: 0;
+    }
+
+    .timeline-component, .timeline-middle{
+        max-height: 100vh;
+        height: 100vh;
+    }
+
+    .timeline-mobile-event {
+        margin-right: 3rem;
+        font-size: 1.2rem;
+    }
+}
+
 .function {
     display: flex;
     align-items: flex-start;
