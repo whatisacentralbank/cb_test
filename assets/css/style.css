@@ -504,6 +504,7 @@ footer img {
 
     .timeline-mobile-event p {
         margin: 0;
+        font-weight: 400;
     }
 
 }
