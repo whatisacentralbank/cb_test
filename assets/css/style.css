@@ -35,7 +35,7 @@ h1, h3 {
 }
 
 h1 {
-    font-size: clamp(2.3rem, 2.5vw, 5rem)
+    font-size: clamp(2rem, 2.5vw, 5rem)
 }
 
 h4 {
@@ -198,6 +198,13 @@ a:hover {
     }
 }
 
+.article br {
+    content: "";
+    margin: 2em;
+    display: block;
+    font-size: 30%;
+  }
+
 .article-1 {
     display: flex;
     justify-content: center;
@@ -213,7 +220,7 @@ a:hover {
 }
 
 .article p, .article li {
-    font-size: clamp(16px, 2.3vw, 1.2em);
+    font-size: clamp(16px, 2.3vw, 1.23em);
     text-align: justify;
     text-align-last: left;
 }
@@ -223,7 +230,7 @@ a:hover {
     text-align: center;
     padding: 0.5em;
     margin: 0.7em;
-    font-size: clamp(1.7rem, 2.8vw, 3rem)
+    font-size: clamp(1.7rem, 2.7vw, 2.8rem)
 }
 
 footer {
