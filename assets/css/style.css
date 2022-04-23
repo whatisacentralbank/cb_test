@@ -460,6 +460,20 @@ footer img {
         padding-top: 0;
     }
 
+    .timeline-period .timeline-event {
+        padding: 0;
+        margin: 0;
+    }
+
+    .timeline-period .timeline-event p {
+        padding: 0;
+        margin: 0;
+    }
+
+    .sans h1 {
+        font-family: Verdana, Tahoma, sans-serif
+    }
+
     .timeline-year div:first-child {
         margin-top: 2em;
         display: flex;
@@ -474,8 +488,7 @@ footer img {
     }
 
     .timeline-component, .timeline-middle, .timeline-component-img{
-        max-height: 120vh;
-        height: 100vh;
+        min-height: 100vh;
     }
 
     .timeline-middle {
@@ -485,6 +498,12 @@ footer img {
     .timeline-mobile-event {
         margin-right: 3rem;
         font-size: 1.15rem;
+        padding: 0;
+        margin-left: 0;
+    }
+
+    .timeline-mobile-event p {
+        margin: 0;
     }
 
 }
