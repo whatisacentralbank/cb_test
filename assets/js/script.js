@@ -154,7 +154,7 @@ function showWindow (n) {
     headDiv.classList.add("bank-head-container");
     imageDiv = document.createElement("div");
     cardImage = document.createElement("img");
-    cardImage.src = '/assets/images/banks/' + (n + 1).toString() + '.png';
+    cardImage.src = '/cb_test/assets/images/banks/' + (n + 1).toString() + '.png';
     imageDiv.appendChild(cardImage);
     cardTitle = document.createElement("h4");
     cardTitle.textContent += headers[n];
