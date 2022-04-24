@@ -452,7 +452,7 @@ footer img {
         padding: 0;
     }
 
-    .timeline-period img {
+    .timeline-period img, .timeline img {
         float:none !important;
     }
 
@@ -532,7 +532,7 @@ footer img {
 
 .map-bg {
     background-color: #181818;
-    margin-top: -4em;
+    margin-top: -5em;
     padding-top: 6em;
 }
 
@@ -552,7 +552,7 @@ footer img {
     margin-bottom: 2em;
 }
 
-.bank-desc p {
+.bank-head-container + div {
     overflow-y: scroll;
     height: 50vh;
 }
@@ -567,4 +567,14 @@ footer img {
     margin-right: 2em;
     height: auto;
     max-width: 80px;
+}
+
+.point {
+    background-color:rgb(75, 170, 232);
+    height: 0.6em;
+    width: 0.6em;
+    border-radius: 0.3em;
+    margin: 0.4em;
+    margin-left: 0.4em;
+    box-shadow: 0 0 10px white;
 }
