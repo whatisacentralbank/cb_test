@@ -478,7 +478,7 @@ layout: wrapper
                     <h1>19</h1>
                     <h1 class="dec">49</h1>
                 </div>
-                <div class="timeline-event timeline-mobile-event">
+                <div class="timeline-event timeline-mobile-event d-block d-lg-none">
                     <p>
                         Принят новый устав Государственного банка. Теперь Госбанк фактически выполняет роль всей банковской системы страны — выпускает деньги, выдает кредиты и проводит денежные расчеты для правительства. Эти функции останутся основными для банка на протяжении почти десяти лет, после чего часть его функций разделят два новых банка-монополиста: Стройбанк СССР и Внешторгбанк СССР.
                      </p> 
@@ -642,17 +642,29 @@ layout: wrapper
     <div class="timeline-middle">
     </div>
     <div class="timeline-component">
-        <div class="timeline-event">
-            <p>
-                Финансовая система переживает серьезные трудности из-за дефолта и экономического кризиса. Проводится ряд важнейших реформ, которые возвращают доверие банковской системе.
-                <br>
-                В 2000 году все банки обязывают перейти на международные стандарты отчетности, в 2001 — установлены нормативы деятельности банков. Это гарантирует большую прозрачность банковской деятельности. В 2003 году принят закон о страховании вкладов, что помогло вернуть доверие к банковской системе.
-            </p> 
+        <div class="timeline-container timeline-container-right">
+            <div class="timeline-year d-block d-lg-none">
+                <div class="mt-1">
+                    <h1>1999</h1>
+                    <h1 class="d-block d-lg-none ms-2"> − </h1>
+                    <h1 class="dec">2003</h1>
+                </div>
+            </div>
+            <div class="timeline-event timeline-mobile-event">
+                <p>
+                    Финансовая система переживает серьезные трудности из-за дефолта и экономического кризиса. Проводится ряд важнейших реформ, которые возвращают доверие банковской системе.
+                    <br>
+                    В 2000 году все банки обязывают перейти на международные стандарты отчетности, в 2001 — установлены нормативы деятельности банков. Это гарантирует большую прозрачность банковской деятельности. В 2003 году принят закон о страховании вкладов, что помогло вернуть доверие к банковской системе.
+                </p> 
+            </div>
+            <div class="timeline-image d-block d-lg-none">
+                <img src="{{ '/assets/images/1999-2003.png' | relative_url }}" alt="">
+            </div>  
         </div>
     </div>
 </div>
 <div class="timeline">    
-    <div class="timeline-component">
+    <div class="timeline-component d-none d-lg-block">
         <div class="timeline-event">
            <p>
                 Банк России получает функции мегарегулятора, став органом регулирования и надзора за всеми участниками финансового сектора, включая банки, биржи, страховые компании, пенсионные и инвестиционные фонды.
@@ -669,10 +681,18 @@ layout: wrapper
                     <h1>20</h1>
                     <h1 class="dec">13</h1>
                 </div>
+                <div class="timeline-event timeline-mobile-event d-block d-lg-none">
+                    <p>
+                        Банк России получает функции мегарегулятора, став органом регулирования и надзора за всеми участниками финансового сектора, включая банки, биржи, страховые компании, пенсионные и инвестиционные фонды.
+                     </p> 
+                 </div>
             </div>
-            <div class="timeline-image">
+            <div class="timeline-image d-none d-lg-block">
                 <img src="{{ '/assets/images/2013.png' | relative_url }}" alt="">
-            </div>    
+            </div>
+            <div class="timeline-image d-block d-lg-none">
+                <img style="margin-left: -2em;" src="{{ '/assets/images/2013.png' | relative_url }}" alt="">
+            </div>     
         </div>
     </div>
 </div>
