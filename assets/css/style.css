@@ -271,9 +271,7 @@ footer img {
     margin-top: -1.5em;
     color: white;
     display: grid;
-    grid-template-columns: 2fr 3fr;;
-    /* display: flex;
-    justify-content: end; */
+    grid-template-columns: 2fr 3fr;
     height: 14em;
     align-items: center;
 }
@@ -283,7 +281,7 @@ footer img {
 }
 
 .headline div {
-    max-width: 50%;
+    max-width: 70%;
     margin-right: 10em;
 }
 
