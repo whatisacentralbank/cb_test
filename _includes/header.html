@@ -12,7 +12,7 @@
             <nav class="navbar-nav w-100 d-flex justify-content-end">
                 {% assign sorted_pages = site.pages | sort:"order" %}
                 {% for page in sorted_pages %}
-                    {% if page.layout == 'map' or page.layout == 'bankofrussia' or page.layout == 'timeline' %}
+                    {% if page.layout == 'map' or page.layout == 'course' or page.layout == 'timeline' %}
                         <a href="{{ page.permalink | relative_url}}" class="nav-link pb-3 mx-2">{{ page.title }}</a>
                     {% endif %}
                 {% endfor %}

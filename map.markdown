@@ -1,5 +1,5 @@
 ---
-title: Мировые финансовые регуляторы
+title: Карта финансовых регуляторов
 permalink: map
 layout: map
 order: 1
