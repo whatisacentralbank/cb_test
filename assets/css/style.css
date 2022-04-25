@@ -610,3 +610,25 @@ footer img {
 .course-container {
     padding: 0 13em;
 }
+
+.more {
+    white-space: nowrap;
+}
+
+.more img {
+    width: clamp(16px, 2.3vw, 1.23em);
+    height: clamp(16px, 2.3vw, 1.23em);
+    display: inline;
+    margin: 0 0.2em;
+    padding: 0.2em;
+}
+
+.info {
+    white-space: nowrap;
+    display: none;
+}
+
+.close {
+    white-space: nowrap;
+    display: none;
+}
