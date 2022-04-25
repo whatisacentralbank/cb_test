@@ -265,8 +265,10 @@ footer img {
     background: black;
     margin-top: -1.5em;
     color: white;
-    display: flex;
-    justify-content: end;
+    display: grid;
+    grid-template-columns: 2fr 3fr;;
+    /* display: flex;
+    justify-content: end; */
     height: 14em;
     align-items: center;
 }
