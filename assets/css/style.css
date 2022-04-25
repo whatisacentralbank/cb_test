@@ -552,11 +552,12 @@ footer img {
 .bank-head-container {
     display: flex;
     margin-bottom: 2em;
+    height: 6vh;
 }
 
 .bank-head-container + div {
     overflow-y: scroll;
-    height: 50vh;
+    height: 45vh;
 }
 
 .bank-head-container div {
