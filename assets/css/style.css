@@ -271,9 +271,7 @@ footer img {
     margin-top: -1.5em;
     color: white;
     display: grid;
-    grid-template-columns: 2fr 3fr;;
-    /* display: flex;
-    justify-content: end; */
+    grid-template-columns: 2fr 3fr;
     height: 14em;
     align-items: center;
 }
@@ -282,8 +280,8 @@ footer img {
     font-size: 4em;
 }
 
-.headline div {
-    max-width: 50%;
+.headline div:nth-child(2) {
+    max-width: 90%;
     margin-right: 10em;
 }
 
@@ -607,4 +605,30 @@ footer img {
     .course-container h4 {
         font-size: 1.2em;
     }
+}
+
+.course-container {
+    padding: 0 13em;
+}
+
+.more {
+    white-space: nowrap;
+}
+
+.more img {
+    width: clamp(16px, 2.3vw, 1.23em);
+    height: clamp(16px, 2.3vw, 1.23em);
+    display: inline;
+    margin: 0 0.2em;
+    padding: 0.2em;
+}
+
+.info {
+    white-space: nowrap;
+    display: none;
+}
+
+.close {
+    white-space: nowrap;
+    display: none;
 }
