@@ -615,17 +615,18 @@ footer img {
     white-space: nowrap;
 }
 
-.more img {
+.more img, .close img {
     width: clamp(16px, 2.3vw, 1.23em);
     height: clamp(16px, 2.3vw, 1.23em);
     display: inline;
     margin: 0 0.2em;
-    padding: 0.2em;
+    padding: 0.1em;
 }
 
 .info {
-    white-space: nowrap;
+    /* white-space: nowrap; */
     display: none;
+    background-color: #E6E72F;
 }
 
 .close {
