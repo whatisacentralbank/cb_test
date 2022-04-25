@@ -144,6 +144,7 @@ for (let i = 0; i < buttons.length; i++) {
 
 function showWindow (n) {
     if (cardDiv) {
+        container.style.display = "block";
         cardDiv.parentNode.removeChild(cardDiv);
         console.log('remove');
         cardDiv = null;
@@ -164,12 +165,16 @@ function showWindow (n) {
     cardDesc.innerHTML = texts[n];
     cardDiv.appendChild(headDiv);
     cardDiv.appendChild(cardDesc);
+    container.style.display = "block";
     container.appendChild(cardDiv);
 }
 
 let bg = document.getElementById("background");
 bg.onclick = function () {
+    console.log('ok1');
+    
     if (cardDiv) {
+        console.log('ok');
         cardDiv.parentNode.removeChild(cardDiv);
         console.log('remove');
         cardDiv = null;
