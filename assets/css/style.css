@@ -280,8 +280,8 @@ footer img {
     font-size: 4em;
 }
 
-.headline div {
-    max-width: 70%;
+.headline div:nth-child(2) {
+    max-width: 90%;
     margin-right: 10em;
 }
 
