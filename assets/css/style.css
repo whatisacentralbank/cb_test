@@ -411,6 +411,14 @@ footer img {
     margin-top: -0.5em;
 }
 
+.timeline-end {
+    background-color: black;
+    color: white;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 3em 9em;
+}
+
 @media (max-width: 992px) {
     .headline {
         padding-left: 1.5em;
@@ -512,7 +520,12 @@ footer img {
         font-weight: 400;
     }
 
+    .timeline-end {
+        min-height: 20em;
+        padding: 3em 2em;
+    }
 }
+
 
 .timeline br {
     content: "";
