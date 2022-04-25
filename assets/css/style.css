@@ -1,3 +1,7 @@
+html {
+    min-height: 100vh;
+}
+
 #logo {
     height: 2.5em;
 }
@@ -17,6 +21,7 @@ body {
     font-family: Verdana, 'Comic Sans MS', sans-serif !important;
     font-weight: 500;
     background-color: #FFFDF9;
+    min-height: 100vh;
 }
 
 .navbar a {
@@ -588,4 +593,18 @@ footer img {
     right: 10%;
     width: 30em;
     height: 63vh;
+}
+
+.course-container {
+    padding: 0 4em;
+}
+
+@media (max-width: 992px) {
+    .course-container {
+        padding: 0.7em;
+    }
+
+    .course-container h4 {
+        font-size: 1.2em;
+    }
 }
