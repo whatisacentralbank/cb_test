@@ -654,6 +654,45 @@ footer img {
     padding: 0;
 }
 
+.inner-bank-list li {
+    border-bottom: 2px dotted black;
+}
+
+.inner-bank-list p {
+    margin-top: 1rem;
+}
+
+.inner-bank-list li:last-child {
+    border-bottom: none;
+}
+
+#button-header {
+    position: relative;
+}
+
+#title-cont {
+    padding: 1rem 1.25rem;
+    margin-left: 5em;
+}
+
+.accordion-item {
+    border: none;
+}
+
+.accordion-button {
+    padding: 0;
+}
+
+#block {
+    position: absolute;
+    top: -1;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 5em;
+    background-color:rgb(75, 170, 232);
+}
+
 .course-container {
     padding: 0 13em;
 }
