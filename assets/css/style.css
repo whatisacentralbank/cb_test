@@ -552,7 +552,7 @@ footer img {
     padding-top: 6em;
 }
 
-.bank-desc {
+.bank-desc-right, .bank-desc-left {
     background-color:#FFFDF9;
     width: 100%;
     height: 100%;
@@ -596,10 +596,18 @@ footer img {
     box-shadow: 0 0 10px white;
 }
 
-.bank-desc {
+.bank-desc-right {
     position: absolute;
     top: 30%;
     right: 10%;
+    width: 30em;
+    height: 63vh;
+}
+
+.bank-desc-left {
+    position: absolute;
+    top: 30%;
+    left: 10%;
     width: 30em;
     height: 63vh;
 }
