@@ -265,6 +265,9 @@ let buttons = document.getElementsByClassName("bank-button");
 let container = document.getElementById("desc-container");
 let cardDiv;
 
+let listContainer = document.getElementsByClassName("bank-list")[0];
+listContainer.onclick = hideWindow;
+
 for (let i = 0; i < buttons.length; i++) {
     buttons[i].onclick = function () {
         showWindow(i);
@@ -304,13 +307,11 @@ function showWindow (n) {
 }
 
 let bg = document.getElementById("background");
-bg.onclick = function () {
-    console.log('ok1');
-    
+bg.onclick = hideWindow;
+
+function hideWindow () {
     if (cardDiv) {
-        console.log('ok');
         cardDiv.parentNode.removeChild(cardDiv);
-        console.log('remove');
         cardDiv = null;
     } 
 }
