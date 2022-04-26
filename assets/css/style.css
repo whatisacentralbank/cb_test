@@ -681,6 +681,7 @@ footer img {
 
 .accordion-button {
     padding: 0;
+    padding-right: 1rem;
 }
 
 #block {
