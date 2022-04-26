@@ -1534,6 +1534,7 @@ layout: wrapper
 </div>
 <script src="{{ '/assets/js/script.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/dist/svg-pan-zoom.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/dist/hammer.js' | relative_url }}"></script>
 <script>
     // Don't use window.onLoad like this in production, because it can only listen to one function.
     window.onload = function() {
@@ -1604,7 +1605,7 @@ layout: wrapper
       , customEventsHandler: eventsHandler
       });
     };
-  </script>
+</script>
 <!-- <script>
     window.onload = function() {
       var panZoom = svgPanZoom('#map', {
