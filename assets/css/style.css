@@ -225,9 +225,7 @@ a:hover {
 }
 
 .article p, .article li {
-    font-size: clamp(16px, 2.3vw, 1.23em);
-    text-align: justify;
-    text-align-last: left;
+    font-size: clamp(16px, 2vw, 1.15em);
 }
 
 .article-title {
