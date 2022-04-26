@@ -203,11 +203,11 @@ a:hover {
     }
 }
 
-.article br {
+ br {
     content: "";
     margin: 2em;
     display: block;
-    font-size: 30%;
+    font-size: 60%;
 }
 
 .article-1 {
@@ -225,7 +225,7 @@ a:hover {
 }
 
 .article p, .article li {
-    font-size: clamp(16px, 2vw, 1.15em);
+    font-size: clamp(16px, 2vw, 1.12em);
 }
 
 .article-title {
