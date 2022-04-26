@@ -699,6 +699,12 @@ footer img {
 }
 
 @media (max-width: 992px) {
+    .map-bg {
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 992px) {
     .course-container {
         padding: 0.7em;
     }
