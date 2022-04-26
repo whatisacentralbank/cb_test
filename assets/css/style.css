@@ -605,7 +605,7 @@ footer img {
 }
 
 .course-container {
-    padding: 0 4em;
+    padding: 0 13em;
 }
 
 @media (max-width: 992px) {
@@ -616,10 +616,12 @@ footer img {
     .course-container h4 {
         font-size: 1.2em;
     }
-}
 
-.course-container {
-    padding: 0 13em;
+    .course-container .lead {
+        font-family: Verdana, 'Comic Sans MS', sans-serif !important;
+        font-size: 1.1em;
+        font-weight: 400;
+    }
 }
 
 .more {
