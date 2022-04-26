@@ -281,6 +281,21 @@ function showWindow (n) {
         console.log('remove');
         cardDiv = null;
     } 
+
+    let openButtons = document.getElementsByClassName("accordion-button");
+    let openLists = document.getElementsByClassName("ok");
+    console.log(openLists);
+
+    // for (let i = 0; i < openLists.length; i++) {
+    //     openLists[i].classList.remove("show");
+    //     // console.log(openLists[i].previousElementSibling);
+    //     let headerChild = openLists[i].previousElementSibling.children[0];
+    //     // console.log('child', headerChild);
+    //     headerChild.classList.add("collapsed");
+        
+    //     // console.log(openLists[i].previousElementSibling);
+    // }
+
     cardDiv = document.createElement("div");
     cardDiv.classList.add("bank-desc");
     if (buttons[n].classList.contains("left")) {
