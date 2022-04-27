@@ -282,16 +282,22 @@ let container1 = document.getElementsByClassName("desc-container")[0];
 let container2 = document.getElementsByClassName("desc-container")[1];
 let cardDiv;
 
-
-
 let listContainer = document.getElementsByClassName("bank-list")[0];
 let listContainerSmall = document.getElementsByClassName("bank-list")[1];
-listContainer.onclick = hideWindow;
+// listContainer.onclick = hideWindow;
 
 for (let i = 0; i < buttons.length; i++) {
     buttons[i].onclick = function () {
         showWindow(i % 25);
     }    
+}
+
+let listButtons = document.getElementsByClassName("bank-name");
+for (let i = 0; i < listButtons.length; i++) {
+    let num = parseInt(listButtons[i].getAttribute("num"));
+    listButtons[i].onclick = function () {
+        showWindow(num % 25);
+    }
 }
 
 function showWindow (n) {
@@ -302,6 +308,7 @@ function showWindow (n) {
         console.log('remove');
         cardDiv = null;
     } 
+    console.log('hi');
 
     listContainerSmall.style.display = "none";
 
@@ -316,11 +323,11 @@ function showWindow (n) {
     headDiv.classList.add("bank-head-container");
     imageDiv = document.createElement("div");
     backImage = document.createElement("img");
-    backImage.src = '/cb_test/assets/images/back.png';
+    backImage.src = '/assets/images/back.png';
     backImage.classList.add("back-arrow")
     backImage.onclick = hideWindow;
     cardImage = document.createElement("img");
-    cardImage.src = '/cb_test/assets/images/map/banks/' + (n + 1).toString() + '.png';
+    cardImage.src = '/assets/images/map/banks/' + (n + 1).toString() + '.png';
     imageDiv.appendChild(backImage);
     imageDiv.appendChild(cardImage);
     cardTitle = document.createElement("h4");

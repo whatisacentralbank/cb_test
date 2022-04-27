@@ -836,3 +836,7 @@ footer img {
     padding: 0;
     width: auto;
 }
+
+.bank-name {
+    cursor: pointer;
+}
