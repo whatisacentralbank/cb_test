@@ -289,11 +289,11 @@ function showWindow (n) {
     let openButtons = document.getElementsByClassName("accordion-button");
     // console.log(openLists);
 
-    for (let i = 0; i < openButtons.length; i++) {
-        console.log(openButtons[i]);
+    // for (let i = 0; i < openButtons.length; i++) {
+    //     console.log(openButtons[i]);
         
-        // console.log(openLists[i].previousElementSibling);
-    }
+    //     // console.log(openLists[i].previousElementSibling);
+    // }
 
     cardDiv = document.createElement("div");
     cardDiv.classList.add("bank-desc");
@@ -305,8 +305,13 @@ function showWindow (n) {
     headDiv = document.createElement("div");
     headDiv.classList.add("bank-head-container");
     imageDiv = document.createElement("div");
+    backImage = document.createElement("img");
+    backImage.src = '/cb_test/assets/images/back.png';
+    backImage.classList.add("back-arrow");
+    backImage.onclick = hideWindow;
     cardImage = document.createElement("img");
     cardImage.src = '/cb_test/assets/images/map/banks/' + (n + 1).toString() + '.png';
+    imageDiv.appendChild(backImage);
     imageDiv.appendChild(cardImage);
     cardTitle = document.createElement("h4");
     cardTitle.textContent += headers[n];

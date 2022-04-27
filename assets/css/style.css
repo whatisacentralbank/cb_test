@@ -713,9 +713,21 @@ footer img {
         height: 70vh;
     }
 
+    .bank-desc p {
+        font-size: 0.9em;
+    }
+    
+    .bank-head-container {
+        align-items: center;
+    }
+
     .bank-head-container + div {
         overflow-y: scroll;
         height: 54vh;
+    }
+
+    .bank-head-container h4 {
+        font-size: 1em;
     }
 }
 
