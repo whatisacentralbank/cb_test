@@ -242,6 +242,14 @@ footer {
     font-size: 0.7em;
 }
 
+footer a {
+    color: rgb(206, 206, 206);
+}
+
+footer a:hover {
+    color: rgb(161, 161, 161);
+}
+
 footer > .container {
     width: 60%;
 }
