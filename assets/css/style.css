@@ -33,6 +33,10 @@ body {
     .navbar a {
         font-size: inherit;
     }
+
+    p {
+        font-weight: 400;
+    }
 }
 
 h1, h3 {
