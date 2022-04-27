@@ -295,7 +295,7 @@ function showWindow (n) {
     headDiv.classList.add("bank-head-container");
     imageDiv = document.createElement("div");
     backImage = document.createElement("img");
-    backImage.src = '/cb_test/assets/images/back.png';
+    backImage.src = '/assets/images/back.png';
     backImage.classList.add("back-arrow")
     backImage.onclick = hideWindow;
     cardImage = document.createElement("img");
