@@ -262,39 +262,38 @@ let texts = [`<p>
             ];
 
 let buttons = document.getElementsByClassName("bank-button");
-let container = document.getElementById("desc-container");
+let container1 = document.getElementsByClassName("desc-container")[0];
+let container2 = document.getElementsByClassName("desc-container")[1];
 let cardDiv;
+
+
 
 let listContainer = document.getElementsByClassName("bank-list")[0];
 listContainer.onclick = hideWindow;
 
 for (let i = 0; i < buttons.length; i++) {
     buttons[i].onclick = function () {
-        showWindow(i);
+        showWindow(i % 24);
     }    
 }
 
 function showWindow (n) {
     if (cardDiv) {
-        container.style.display = "block";
+        container1.style.display = "block";
+        container2.style.display = "block";
         cardDiv.parentNode.removeChild(cardDiv);
         console.log('remove');
         cardDiv = null;
     } 
 
     let openButtons = document.getElementsByClassName("accordion-button");
-    let openLists = document.getElementsByClassName("ok");
-    console.log(openLists);
+    // console.log(openLists);
 
-    // for (let i = 0; i < openLists.length; i++) {
-    //     openLists[i].classList.remove("show");
-    //     // console.log(openLists[i].previousElementSibling);
-    //     let headerChild = openLists[i].previousElementSibling.children[0];
-    //     // console.log('child', headerChild);
-    //     headerChild.classList.add("collapsed");
+    for (let i = 0; i < openButtons.length; i++) {
+        console.log(openButtons[i]);
         
-    //     // console.log(openLists[i].previousElementSibling);
-    // }
+        // console.log(openLists[i].previousElementSibling);
+    }
 
     cardDiv = document.createElement("div");
     cardDiv.classList.add("bank-desc");
@@ -317,8 +316,16 @@ function showWindow (n) {
     cardDesc.innerHTML = texts[n];
     cardDiv.appendChild(headDiv);
     cardDiv.appendChild(cardDesc);
-    container.style.display = "block";
-    container.appendChild(cardDiv);
+
+    if (window.screen.width < 992) {
+        container2.style.display = "block";
+        container2.appendChild(cardDiv);
+    } else {
+        container1.style.display = "block";
+        container1.appendChild(cardDiv);
+    }
+
+
 }
 
 let bg = document.getElementById("background");

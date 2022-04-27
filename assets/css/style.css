@@ -547,6 +547,7 @@ footer img {
 }
 
 .map-bg {
+    min-height: 85vh;
     background-color: #181818;
     margin-top: -5em;
     padding-top: 6em;
@@ -562,6 +563,7 @@ footer img {
 .bank-desc h4 {
     font-size: 1em;
 }
+
 
 .bank-head-container {
     display: flex;
@@ -598,7 +600,7 @@ footer img {
 
 .bank-desc-right {
     position: absolute;
-    top: 30%;
+    top: 25%;
     right: 10%;
     width: 30em;
     height: 63vh;
@@ -606,7 +608,7 @@ footer img {
 
 .bank-desc-left {
     position: absolute;
-    top: 30%;
+    top: 25%;
     left: 10%;
     width: 30em;
     height: 63vh;
@@ -701,6 +703,19 @@ footer img {
 @media (max-width: 992px) {
     .map-bg {
         padding-top: 0;
+    }
+
+    .bank-desc-left, .bank-desc-right {
+        position: absolute;
+        top: 20%;
+        left: 7.5%;
+        width: 85vw;
+        height: 70vh;
+    }
+
+    .bank-head-container + div {
+        overflow-y: scroll;
+        height: 54vh;
     }
 }
 
