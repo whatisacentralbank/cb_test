@@ -1,41 +1,42 @@
-let myImage;
-let c;
-  x = 1;
-  y = 1;
-
-function preload() {
-  myImage = loadImage("pope.jpg");
-}
-
 function setup() {
-  createCanvas(myImage.width, myImage.height);
-  background(0);
-}
-
-function draw() {
-  noStroke();
+  createCanvas(400, 400);
   
-  if (x%10 == 0){
-    
-  }
-  if (x < myImage.width) {
-    c = myImage.get(x, y);
-    x += 2;
-    circle(x+(c[1]*0.05), y+(c[1]*0.05), 3);
-    c[0] = 0;
-    c [1] = 0;
-  print (c[2])
-    if (c[2]>120){
-      
-      c=0;}
-    else {
-      c='green';
+}
+var creal = 22;
+var cimag = 0.156;
+var frame = 0;
+a = setInterval(fractal, 1);
+
+function fractal() {
+  var canvas = document.querySelector("canvas");
+  var context = canvas.getContext("2d");
+  for (y = 1; y < 100; y++) {
+    for (x = 1; x < 120; x++) {
+      let noiseScale = 0.0009;
+      let location = 2 + noise(-mouseX * noiseScale, -mouseY * 2 * noiseScale);
+      var cx = -location + x / 20;
+      var cy = -location + y / 20;
+
+      var i = 4;
+      var k = (noise(0.4) * 6) / 2;
+
+      do {
+        xt = cx * cx - cy * k + creal;
+        cy = k * cx * cy + cimag;
+        cx = xt;
+        i++;
+      } while (cx * cx - cy * cy < 5 && i < 50);
+
+      i = i.toString(8);
+      context.beginPath();
+      context.rect(x * 4, y * 5, 5, 5);
+
+      context.fillStyle = "#" + 0 + i + 8 + i;
+      context.fill();
     }
-    fill(c);
-    
-  } else {
-    x = 0;
-    y = y + 2
-    print(c)
   }
+
+  frame++;
+  creal = -0.23 + 0.6 * Math.cos(frame / (3.14 * 29));
+  cimag = 0.23 + 0.8 * Math.cos(frame / (3.14 * 25));
 }
