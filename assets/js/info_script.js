@@ -16,11 +16,9 @@ for (let i = 0; i < closeButtons.length; i++) {
 function showInfo (button) {
     button.nextSibling.style.display = "inline";
     button.nextSibling.nextSibling.style.display = "inline";
-    console.log(button.nextSibling);
 }
 
 function hideInfo (button) {
     button.previousSibling.style.display = "none";
     button.style.display = "none";
-    console.log(button);
 }
