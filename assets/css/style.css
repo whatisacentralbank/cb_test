@@ -247,8 +247,7 @@ footer > .container {
 }
 
 footer img {
-    max-height: 150px;
-    padding: 3em;
+    max-height: 100px;
 }
 
 .serif-font {
@@ -818,4 +817,10 @@ footer img {
 
 .close:hover img:last-child {
     display: inline;
+}
+
+.footer-logo {
+    max-height: 40%;
+    padding: 0;
+    width: auto;
 }
