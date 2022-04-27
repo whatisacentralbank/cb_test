@@ -786,6 +786,18 @@ footer img {
     padding: 0.1em;
 }
 
+.more img:last-child {
+    display: none;
+}
+
+.more:hover img:first-child {
+    display: none;
+}
+
+.more:hover img:last-child {
+    display: inline;
+}
+
 .info {
     display: none;
     background-color: #E6E72F;
@@ -794,4 +806,16 @@ footer img {
 .close {
     white-space: nowrap;
     display: none;
+}
+
+.close img:last-child {
+    display: none;
+}
+
+.close:hover img:first-child {
+    display: none;
+}
+
+.close:hover img:last-child {
+    display: inline;
 }
