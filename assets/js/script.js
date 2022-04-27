@@ -269,6 +269,7 @@ let cardDiv;
 
 
 let listContainer = document.getElementsByClassName("bank-list")[0];
+let listContainerSmall = document.getElementsByClassName("bank-list")[1];
 listContainer.onclick = hideWindow;
 
 for (let i = 0; i < buttons.length; i++) {
@@ -286,14 +287,7 @@ function showWindow (n) {
         cardDiv = null;
     } 
 
-    let openButtons = document.getElementsByClassName("accordion-button");
-    // console.log(openLists);
-
-    // for (let i = 0; i < openButtons.length; i++) {
-    //     console.log(openButtons[i]);
-        
-    //     // console.log(openLists[i].previousElementSibling);
-    // }
+    listContainerSmall.style.display = "none";
 
     cardDiv = document.createElement("div");
     cardDiv.classList.add("bank-desc");
@@ -307,7 +301,7 @@ function showWindow (n) {
     imageDiv = document.createElement("div");
     backImage = document.createElement("img");
     backImage.src = '/cb_test/assets/images/back.png';
-    backImage.classList.add("back-arrow");
+    backImage.classList.add("back-arrow")
     backImage.onclick = hideWindow;
     cardImage = document.createElement("img");
     cardImage.src = '/cb_test/assets/images/map/banks/' + (n + 1).toString() + '.png';
@@ -341,4 +335,6 @@ function hideWindow () {
         cardDiv.parentNode.removeChild(cardDiv);
         cardDiv = null;
     } 
+
+    listContainerSmall.style.display = "block";
 }

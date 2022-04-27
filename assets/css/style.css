@@ -614,6 +614,10 @@ footer img {
     height: 63vh;
 }
 
+.accordion div {
+    background-color: #fffdf9;
+}
+
 .bank-list {
     position: absolute;
     top: 15%;
@@ -719,6 +723,7 @@ footer img {
     
     .bank-head-container {
         align-items: center;
+        margin-bottom: 1em;
     }
 
     .bank-head-container + div {
@@ -729,6 +734,28 @@ footer img {
     .bank-head-container h4 {
         font-size: 1em;
     }
+
+    #title-cont {
+        padding: 0.6rem 0.9rem;
+    }
+
+    .bank-list {
+        left: 7.5%;
+        width: 85vw;
+    }
+
+    .bank-list h1 {
+        font-size: 1.4em;
+    }
+
+    .bank-list p {
+        font-size: 0.9em;
+    }
+
+    .bank-head-container img {
+        margin-right: 0.5em !important;
+    }
+
 }
 
 @media (max-width: 992px) {
