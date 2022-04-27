@@ -299,7 +299,7 @@ function showWindow (n) {
     backImage.classList.add("back-arrow")
     backImage.onclick = hideWindow;
     cardImage = document.createElement("img");
-    cardImage.src = '/cb_test/assets/images/map/banks/' + (n + 1).toString() + '.png';
+    cardImage.src = '/assets/images/map/banks/' + (n + 1).toString() + '.png';
     imageDiv.appendChild(backImage);
     imageDiv.appendChild(cardImage);
     cardTitle = document.createElement("h4");
