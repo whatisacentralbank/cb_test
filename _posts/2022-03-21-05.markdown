@@ -1,5 +1,5 @@
 ---
-layout: post5
+layout: 404
 permalink: "5"
 title: Национальная платежная система
 ---

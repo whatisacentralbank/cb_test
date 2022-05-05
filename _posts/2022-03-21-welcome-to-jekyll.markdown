@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: 404
 title:  "hi"
 date:   2022-03-21 12:17:14 +0300
 categories: jekyll update

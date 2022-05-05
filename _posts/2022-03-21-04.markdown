@@ -1,5 +1,5 @@
 ---
-layout: post4
+layout: 404
 permalink: "4"
 title: Наличное денежное обращение
 ---

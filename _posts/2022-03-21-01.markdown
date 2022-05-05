@@ -1,5 +1,5 @@
 ---
-layout: post1
+layout: 404
 permalink: "1"
 title: Денежно-кредитная политика
 ---

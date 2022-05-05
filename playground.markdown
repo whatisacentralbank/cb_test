@@ -1,4 +1,5 @@
 ---
-layout: playground
+layout: 404
+
 ---
 

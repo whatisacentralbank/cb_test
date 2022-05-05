@@ -1,5 +1,5 @@
 ---
-layout: post3
+layout: 404
 permalink: "3"
 title: Регулирование финансового рынка
 ---
