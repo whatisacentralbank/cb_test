@@ -631,10 +631,12 @@ footer img {
 
 .bank-list {
     position: absolute;
-    top: 15%;
     left: 10%;
     width: 30em;
     background-color: #fffdf9;
+    transition-property: top;
+    transition-duration: 0.35s;
+    transition-timing-function: ease;
 }
 
 .bank-list h1 {
@@ -843,4 +845,12 @@ footer img {
 
 .shadow-bottom {
     box-shadow:rgb(128, 128, 128) 0px 0px 15px 0px;
+}
+
+.bank-list-open {
+    top: 30% !important; 
+}
+
+.bank-list-closed {
+    top: 15% !important;
 }

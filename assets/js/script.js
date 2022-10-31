@@ -261,6 +261,19 @@ let listContainer = document.getElementsByClassName("bank-list")[0];
 let listContainerSmall = document.getElementsByClassName("bank-list")[1];
 // listContainer.onclick = hideWindow;
 
+let button = document.getElementsByClassName('navbar-toggler')[0]
+button.onclick = function () {
+    if (listContainerSmall.classList.contains("bank-list-open")) {
+        listContainerSmall.classList.remove("bank-list-open")
+        listContainerSmall.classList.add("bank-list-closed")
+        console.log()
+    } else {
+        listContainerSmall.classList.add("bank-list-open")
+        listContainerSmall.classList.remove("bank-list-closed")
+    }
+}
+
+
 for (let i = 0; i < buttons.length; i++) {
     buttons[i].onclick = function () {
         showWindow(i % 26);
