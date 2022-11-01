@@ -847,6 +847,10 @@ footer img {
     box-shadow:rgb(128, 128, 128) 0px 0px 15px 0px;
 }
 
+.bank-list {
+    top: 15%;   
+}
+
 .bank-list-open {
     top: 35% !important; 
 }
